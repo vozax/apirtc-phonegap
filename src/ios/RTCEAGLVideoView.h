@@ -37,10 +37,11 @@
 
 @end
 
-// RTCEAGLVideoView is an RTCVideoRenderer which renders i420 frames in its
-// bounds using OpenGLES 2.0.
-@interface RTCEAGLVideoView : UIView <RTCVideoRenderer>
+@class RTCVideoTrack;
+// RTCEAGLVideoView renders |videoTrack| onto itself using OpenGLES.
+@interface RTCEAGLVideoView : UIView
 
+@property(nonatomic, strong) RTCVideoTrack* videoTrack;
 @property(nonatomic, weak) id<RTCEAGLVideoViewDelegate> delegate;
 
 @end

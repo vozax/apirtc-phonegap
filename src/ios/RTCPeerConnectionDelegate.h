@@ -38,6 +38,9 @@
 // implemented to get messages from PeerConnection.
 @protocol RTCPeerConnectionDelegate<NSObject>
 
+// Triggered when there is an error.
+- (void)peerConnectionOnError:(RTCPeerConnection *)peerConnection;
+
 // Triggered when the SignalingState changed.
 - (void)peerConnection:(RTCPeerConnection *)peerConnection
  signalingStateChanged:(RTCSignalingState)stateChanged;
