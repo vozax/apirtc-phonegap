@@ -62,7 +62,7 @@ Let's go! edit your index.html file in www.
  	<!-- or if you use phonegap
  		<script src="phonegap.js"></script>
  	-->
-    <script src="js/apiRTC.min.js"></script>
+    <script src="http://cloud.apizee.com/apiRTC/v2.7/apiRTC-2.7.min.debug.js"></script>
 </head>
 ```
 
